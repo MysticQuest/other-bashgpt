@@ -1,4 +1,4 @@
-function gpt() {
+function gtp() {
   local prompt="$1"
   local command="$2"
   local command_output="$(eval "$command")"
@@ -13,4 +13,4 @@ function gpt() {
     | jq -r '.choices[0].message.content'
 }
 
-alias q="gpt"
+alias q="gtp"
